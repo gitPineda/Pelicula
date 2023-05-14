@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Book from './componentes/Book';
+import Footer from './componentes/Footer';
+import Header from './componentes/Header';
 
 function App() {
+
+  const title='la vida es bella';
+  const pie='resumen del libro la vida es bella'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <Header title={title}/>
+     <Book/>
+     <Footer pie={pie}/>
     </div>
   );
 }
